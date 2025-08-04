@@ -1,0 +1,34 @@
+{
+  "name": "eslint-plugin-zustand-selectors",
+  "version": "1.0.0",
+  "description": "ESLint plugin to enforce the use of selectors when accessing Zustand store state",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "zustand",
+    "selectors",
+    "react",
+    "state-management"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors/issues"
+  },
+  "homepage": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors#readme"
+}
