@@ -23,6 +23,9 @@
   "engines": {
     "node": ">=12.0.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors.git"
