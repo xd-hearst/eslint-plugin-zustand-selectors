@@ -1,5 +1,5 @@
 {
-  "name": "@xd-hearst/eslint-plugin-zustand-selectors",
+  "name": "eslint-plugin-zustand-selectors-xd",
   "version": "1.0.0",
   "description": "ESLint plugin to enforce the use of selectors when accessing Zustand store state",
   "main": "lib/index.js",
