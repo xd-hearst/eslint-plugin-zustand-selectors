@@ -70,6 +70,49 @@ const MyComponent = () => {
   const count = useMyStore(state => state.count); // ✅ Using selector
   return <div>{count}</div>;
 };
+
+// ✅ Also correct - testing scenarios are automatically ignored
+const { result } = renderHook(() => useMyStore()); // No error in tests
+```
+
+#### Configuration
+
+The rule can be configured with the following options:
+
+```json
+{
+  "rules": {
+    "zustand-selectors/use-store-selectors": [
+      "error",
+      {
+        "ignoreTestingFunctions": ["renderHook", "act", "waitFor"]
+      }
+    ]
+  }
+}
+```
+
+##### Options
+
+- `ignoreTestingFunctions` (array): List of function names that should be ignored when checking for selector usage. Default: `["renderHook", "act", "waitFor"]`
+
+#### Testing Support
+
+The rule automatically ignores store calls inside common testing functions to avoid false positives:
+
+```javascript
+// ✅ These won't trigger the rule
+const { result } = renderHook(() => useMyStore());
+
+act(() => {
+  const store = useMyStore();
+  store.increment();
+});
+
+await waitFor(() => {
+  const store = useMyStore();
+  expect(store.count).toBe(1);
+});
 ```
 
 ## Why Use Selectors?

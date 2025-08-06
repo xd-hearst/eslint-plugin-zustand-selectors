@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-zustand-store-selectors",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint plugin to enforce the use of selectors when accessing Zustand store state",
   "main": "lib/index.js",
   "scripts": {
@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors/issues"
   },
-  "homepage": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors#readme"
+  "homepage": "https://github.com/xd-hearst/eslint-plugin-zustand-selectors#readme",
+  "devDependencies": {
+    "eslint": "^9.32.0"
+  }
 }
